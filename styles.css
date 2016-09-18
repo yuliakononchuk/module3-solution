@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    color:#F2F3F4;
+}
+
+body {
+    background-color: #093145;
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 140%;
+    }
+
+.button-container {
+    position: relative;
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family: 'Cabin';
+    background-color: #EFD469;
+    border-radius: 15px;
+}
+
+.button {
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 25%;
+    padding-top: 10px;
+    font-family: 'Cabin';
+    font-size: 100%;
+    text-align: center;
+    border-style: dotted;
+}
+
+.text {
+    position: absolute;
+    color:#373D3F;
+    top: 50%;
+    left: 50%;
+    font-size: 80%;
+    transform: translateX(-50%) translateY(-30%);
+}
+
+#b1 {
+  background-color: #1496BB;
+}
+
+#b2 {
+  background-color: #F26D21;
+}
+
+#b3 {
+  background-color: #C02F1D;
+}
+
+.row {
+  width: 100%;
+}
+/********** Desktop only **********/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-lg {
+    width: 32%;
+  }
+}
+
+/********** Tablets only **********/  
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-half, .col-md-full {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-md-half {
+    width: 48.5%;
+  }
+  .col-md-full {
+    width: 98%;
+  }
+}
+
+/********** Mobile only **********/  
+@media (max-width: 767px) {
+  .col-sm {
+    float: left;
+    border: 1px solid black;
+  }
+  .col-sm {
+    width: 98%;
+  }
+}
